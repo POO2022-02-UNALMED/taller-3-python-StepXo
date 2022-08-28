@@ -50,7 +50,7 @@ class TV():
     def getCanal(self):
         return self._canal
 
-    def  get_Estado(self):
+    def  getEstado(self):
         return self._estado
 
     @classmethod

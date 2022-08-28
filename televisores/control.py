@@ -8,11 +8,11 @@ class Control():
         self._tv.setControl(self)   #el atributo -tv.control- apunte a -este.control-
     
 
-    def get_Tv(self):
+    def getTv(self):
         return self._tv
     
-    def set_Tv(self, _tv):
-        self._tv = _tv
+    def setTv(self, tv):
+        self._tv = tv
     
 
     def turnOn(self):
