@@ -1,41 +1,41 @@
 
 class Control():
     def __init__(self):
-        self.tv = None
+        self._tv = None
 
-    def enlazar(self,tv):
-        self.tv = tv               #attributo -tv- apuntar a objeto -tv-
-        self.tv.setControl(self)   #el atributo -tv.control- apunte a -este.control-
+    def enlazar(self,_tv):
+        self._tv = _tv               #attributo -tv- apuntar a objeto -tv-
+        self._tv.setControl(self)   #el atributo -tv.control- apunte a -este.control-
     
 
-    def getTv(self):
-        return self.tv
+    def get_Tv(self):
+        return self._tv
     
-    def setTv(self, tv):
-        self.tv = tv
+    def set_Tv(self, _tv):
+        self._tv = _tv
     
 
     def turnOn(self):
-        self.tv.turnOn(self)
+        self._tv.turnOn(self)
     
     def turnOff(self):
-        self.tv.turnOff(self)
+        self._tv.turnOff(self)
     
 
     def canalUp(self):
-        self.tv.canalUp(self)
+        self._tv.canalUp(self)
     
     def canalDown(self):
-        self.tv.canalDown(self)
+        self._tv.canalDown(self)
     
 
     def volumenUp(self):
-        self.tv.volumenUp(self)
+        self._tv.volumenUp(self)
     
     def volumenDown(self):
-        self.tv.volumenDown(self)
+        self._tv.volumenDown(self)
     
     
     def setCanal(self, canal):
-        if (self.tv.getEstado(self) and canal<=120 and canal>=1):
-            self.tv.setCanal(canal)
+        if self._tv.getEstado(self) and canal<=120 and canal>=1:
+            self._tv.setCanal(canal)
