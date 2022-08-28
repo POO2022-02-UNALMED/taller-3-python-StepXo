@@ -3,8 +3,8 @@ class Control():
     def __init__(self):
         self._tv = None
 
-    def enlazar(self,_tv):
-        self._tv = _tv               #attributo -tv- apuntar a objeto -tv-
+    def enlazar(self,tv):
+        self._tv = tv               #attributo -tv- apuntar a objeto -tv-
         self._tv.setControl(self)   #el atributo -tv.control- apunte a -este.control-
     
 
