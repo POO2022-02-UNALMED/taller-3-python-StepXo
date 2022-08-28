@@ -12,13 +12,13 @@ class TV():
 
     #Setters
     def setMarca (self, marca):
-        self.marca = marca
+        self._marca = marca
 
     def setControl (self, control):
-        self.control = control
+        self._control = control
 
     def setPrecio (self, precio):
-        self.precio = precio
+        self._precio = precio
 
     def setVolumen (self, volumen):
         if self._estado and volumen<=7 and volumen>=0:
